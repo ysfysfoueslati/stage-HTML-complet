@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">acceuil</a></li>
+            <li><a href="contact.html">contact</a></li>
+            <li><a href="menu.html">menu</a></li>
+        </ul>
+    </nav>
+    <h1>nous contacter</h1>
+    <form action="contact.html" >
+    <fieldset>
+        <legend>nos contacter</legend>
+        <div>
+        <label for="emailinput">votre email:</label>
+        <input type="text" id="emailinput" name="email" placeholder="email@domaine.com">
+        </div>
+        <div>
+        <label for="nameinput">votre nom:</label>
+        <input type="text" id="nameinput" name="firstname">
+        </div>
+        <div>
+            <input type="file" name="file" id="file">
+            <label for="file">choisir un fichier</label>
+        </div>
+        <div>
+            <input type="month" name="month" id="month">
+            <label for="month">choisir un mois</label>
+        </div>
+        <div>
+            <label>sexe:</label>
+            <div>
+                <input type="radio" name="sexe" id="masculin">
+                <label for="masculin">masculin</label>
+            </div>
+            <div>
+                <input type="radio" name="sexe" id="feminin">
+                <label for="feminin">feminin</label>
+            </div>
+        </div>
+        <div>
+            <label id="animal">animal préféré:</label>
+            <select name="animal" id="animal" multiple>
+                <optgroup label="animaux domestiques">
+                    <option value="chien">chien</option>
+                    <option value="chat">chat</option>
+                </optgroup>
+                <optgroup label="animaux sauvages">
+                    <option value="lion">lion</option>
+                    <option value="tigre">tigre</option>
+                </optgroup>
+            </select>
+        </div>
+        <div>
+            <label for="message">votre message:</label>
+            <textarea name="message" id="message" cols="30" rows="10"></textarea>
+        <div>
+            <input type="checkbox" name="cgu" id="cgu">
+            <label for="cgu">j'accepte les conditions d'utilisation</label>
+        </div>
+        <input type="submit" value="envoyer un mail">
+        <input type="reset" value="annuler"> 
+    </fieldset>
+    
+    </form>
+</body>
+</html>
